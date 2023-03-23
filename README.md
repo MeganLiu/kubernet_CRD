@@ -139,3 +139,10 @@ kubectl
 Kubernetes 动态客户端（DynamicClient），可以对任意Kubernetes资源进行RESTFful操作，包括CRD自定义资源。
 你所编写的 REST 客户端
 使用 Kubernetes 客户端生成工具 所生成的客户端。生成客户端的工作有些难度，不过某些项目可能会随着 CRD 或 聚合 API 一起提供一个客户端
+
+
+ddition, Operators actually allow for automatic implementation of typical Day-1 tasks (installation, configuration, etc.) and Day-2 tasks (reconfiguration, upgrade, backup, failover, recovery, etc.), for a software running within the Kubernetes cluster, integrating natively with Kubernetes concepts and APIs.
+
+This is why they are called “native Kubernetes applications“, and this definition can also be viewed in another, more operational way. K8s Operators are controllers for packaging, managing, and deploying applications on Kubernetes. In order to do these things, the Operator uses Custom Resources (CR) that define the desired configuration and state of a specific application through Custom Resource Definitions (CRD). 
+
+The Operator’s role is to reconcile the actual state of the application with the state desired by the CRD using a control loop in which it can automatically scale, update, or restart the application. Practically speaking, Kubernetes offers basic commands, primitives, that can be used by Operators to define more complex actions
