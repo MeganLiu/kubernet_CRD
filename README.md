@@ -163,4 +163,6 @@ To date, there are two official applications where you can search for existing O
 
 Artifact HUB – where we find both operators and helm charts (CNCF project)
 Operator Hub – dedicated exclusively to Operators (Redhat project)
-Operators enable us to find solutions to very different problems. Instead of a list of Operators, let’s start with some situations to solve and give some examples
+Operators enable us to find solutions to very different problems. Instead of a list of Operators, let’s start with some situations to solve and give some examples.
+
+https://www.cncf.io/blog/2022/06/15/kubernetes-operators-what-are-they-some-examples/
