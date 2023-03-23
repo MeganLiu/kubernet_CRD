@@ -146,3 +146,21 @@ ddition, Operators actually allow for automatic implementation of typical Day-1 
 This is why they are called “native Kubernetes applications“, and this definition can also be viewed in another, more operational way. K8s Operators are controllers for packaging, managing, and deploying applications on Kubernetes. In order to do these things, the Operator uses Custom Resources (CR) that define the desired configuration and state of a specific application through Custom Resource Definitions (CRD). 
 
 The Operator’s role is to reconcile the actual state of the application with the state desired by the CRD using a control loop in which it can automatically scale, update, or restart the application. Practically speaking, Kubernetes offers basic commands, primitives, that can be used by Operators to define more complex actions
+
+
+Operators and Custom Solutions
+Operators are definitely complex to create from scratch. They require programming skills (preferably GO, but they can be implemented in any language as client/server communications) and a thorough knowledge of Kubernetes native controllers and its operating mechanisms (reconciliation loops). 
+
+However, there are frameworks that can reduce this complexity, such as:
+
+Operator Framework 
+Kubebuilder
+Kubernetes Operators Framework 
+Fortunately, as we have seen, Operators can be transferred from one environment to another and configured easily. For this reason a true cottage economy was born, which aims to enrich and simplify the deployment, management, and sizing of applications on Kubernetes through Operators.
+
+Kubernetes Operator: Some Examples
+To date, there are two official applications where you can search for existing Operators easily: 
+
+Artifact HUB – where we find both operators and helm charts (CNCF project)
+Operator Hub – dedicated exclusively to Operators (Redhat project)
+Operators enable us to find solutions to very different problems. Instead of a list of Operators, let’s start with some situations to solve and give some examples
