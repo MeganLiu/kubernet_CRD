@@ -32,3 +32,14 @@ spec:
             servicePort:
               type: string
               minLength: 1
+              
+              
+apiVersion: example.com/v1
+kind: HTTPRoute
+metadata:
+  name: example-route
+spec:
+  path: /example
+  serviceName: example-service
+  servicePort: 80
+
